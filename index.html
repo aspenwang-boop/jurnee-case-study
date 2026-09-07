@@ -209,4 +209,7 @@ header nav{margin-left:auto}
 @media(max-width:760px){.venue-size-caption{font-size:11px;margin-top:6px;margin-bottom:10px}}
 </style>
 <script>{const addVenueCaptions=(selector,captions)=>{document.querySelectorAll(selector).forEach((row,index)=>{const image=row.querySelector(':scope > .venue-carousel, :scope > .photo');if(!image||!captions[index]||image.parentElement.classList.contains('venue-media'))return;const media=document.createElement('div');media.className='venue-media';image.before(media);media.append(image);const caption=document.createElement('p');caption.className='venue-size-caption';caption.textContent=captions[index];media.append(caption);});};addVenueCaptions('#venues .venue-rows > .venue-row',['320 m² rooftop · ≈ 3,445 ft²','300 m² indoor + 300 m² rooftop · ≈ 6,458 ft² total','250 m² · ≈ 2,691 ft²']);addVenueCaptions('#event2 .event2-venue-rows > .venue-row',['Floor area not publicly disclosed · Up to 90 standing','400 ft² · ≈ 37 m²','600 ft² indoor · ≈ 56 m²']);}</script>
+<style>
+.currency-value{display:inline-block;text-align:center}
+</style>
 <footer><div class="wrap"><span>Prepared for Jurnee</span><span>Working case study · 2026</span></div></footer></body></html>
